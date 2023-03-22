@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MobileverificationFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/img_arrowback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vector__18_"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+
+            <TextView
+                android:id="@+id/mnverification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26sp"
+                android:layout_marginTop="@dimen/_100sdp"
+                android:text="Mobile Number Verification"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_arrowback" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/entar_a_number"
+                app:layout_constraintTop_toBottomOf="@+id/mnverification"
+                 >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp"
+                    android:background="#FDF6F3"
+                    android:hint="Enter a number"
+                    android:minHeight="48dp"
+                    android:singleLine="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Enter your main number to be used taking orders"
+                android:textAllCaps="false"
+                android:textColor="#676767"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="15.29dp"
+                android:layout_height="15.29dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="@dimen/_32sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10.41dp"
+                android:text="@string/text"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/checkBox"
+                app:layout_constraintStart_toEndOf="@+id/checkBox"
+                app:layout_constraintTop_toTopOf="@+id/checkBox" />
+
+               <androidx.appcompat.widget.AppCompatButton
+                   android:id="@+id/appbutton_verify"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Verify "
+                   android:textColor="@color/white"
+                   android:textStyle="bold"
+                   android:textSize="18sp"
+                   android:textAllCaps="false"
+                   android:layout_marginTop="@dimen/_33sdp"
+                   app:layout_constraintTop_toBottomOf="@id/textView4"
+                   android:background="@drawable/gettingstart"
+                   android:layout_marginHorizontal="@dimen/_25sdp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

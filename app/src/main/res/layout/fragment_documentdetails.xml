@@ -1,14 +1,428 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".DocumentdetailsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_documentsdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_arrowback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="23dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/group_33831"/>
+
+        <TextView
+            android:id="@+id/txt_documentsdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Documents &amp; Details"
+            android:textStyle="bold"
+            android:textColor="@color/blacks"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:layout_marginStart="10.65dp"
+            app:layout_constraintTop_toTopOf="@+id/img_arrowback"
+            app:layout_constraintBottom_toBottomOf="@id/img_arrowback"
+            app:layout_constraintStart_toEndOf="@id/img_arrowback"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedscroolview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout_documentsdetails">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        >
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_RC"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/rcpanadhar"
+        android:layout_marginHorizontal="17dp"
+        >
+
+
+        <TextView
+            android:id="@+id/txt_RC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RC"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:paddingHorizontal="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/group_33832"
+              app:layout_constraintTop_toTopOf="@id/txt_RC"
+              app:layout_constraintBottom_toBottomOf="@id/txt_RC"
+              app:layout_constraintEnd_toEndOf="parent"
+              android:layout_marginEnd="17dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_DrivingLicense"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/rcpanadhar"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout_RC">
+
+        <TextView
+            android:id="@+id/txt_DrivingLicense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driving License"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:paddingHorizontal="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/group_33832"
+            app:layout_constraintTop_toTopOf="@id/txt_DrivingLicense"
+            app:layout_constraintBottom_toBottomOf="@id/txt_DrivingLicense"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="17dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_Aadhar"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/rcpanadhar"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout_DrivingLicense">
+
+        <TextView
+            android:id="@+id/txt_Aadhar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aadhar"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:paddingHorizontal="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/group_33832"
+            app:layout_constraintTop_toTopOf="@id/txt_Aadhar"
+            app:layout_constraintBottom_toBottomOf="@id/txt_Aadhar"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="17dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_Pan"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/rcpanadhar"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout_Aadhar">
+
+        <TextView
+            android:id="@+id/txt_Pan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pan"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:paddingHorizontal="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_pan"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@drawable/rcpanadhar"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout_Aadhar">
+
+        <TextView
+            android:id="@+id/txt_pan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pan"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:paddingHorizontal="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="17dp"
+            android:src="@drawable/group_33832"
+            app:layout_constraintTop_toTopOf="@id/txt_pan"
+            app:layout_constraintBottom_toBottomOf="@id/txt_pan"
+            app:layout_constraintEnd_toEndOf="parent"
+             />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:background="@drawable/rcpanadhar"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout_pan">
+
+        <TextView
+            android:id="@+id/txt_phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:paddingHorizontal="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+             android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91 954000527"
+            android:textColor="#686868"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:paddingHorizontal="19dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_phonenumber"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_gender"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:background="@drawable/rcpanadhar"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout_phonenumber">
+
+        <TextView
+            android:id="@+id/txt_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:paddingHorizontal="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textColor="#686868"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:paddingHorizontal="19dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_gender"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_Address"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:background="@drawable/rcpanadhar"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout_gender">
+
+        <TextView
+            android:id="@+id/txt_Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:paddingHorizontal="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_delhiindia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delhi,  India"
+            android:textColor="#686868"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:paddingHorizontal="19dp"
+            android:layout_marginTop="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_Address"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vector__17_"
+                android:layout_marginEnd="22dp"
+                app:layout_constraintTop_toTopOf="@id/txt_Address"
+                app:layout_constraintBottom_toBottomOf="@id/txt_delhiindia"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_languagespeak"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginHorizontal="17dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/rcpanadhar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout_Address"
+        tools:layout_editor_absoluteX="17dp">
+
+        <TextView
+            android:id="@+id/txt_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingHorizontal="19dp"
+            android:text="Language | speak"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_languagedetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:paddingHorizontal="19dp"
+            android:text="Language details not available"
+            android:textAllCaps="false"
+            android:textColor="#686868"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_language" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vector__17_"
+            android:layout_marginEnd="22dp"
+            app:layout_constraintTop_toTopOf="@id/txt_language"
+            app:layout_constraintBottom_toBottomOf="@id/txt_languagedetails"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

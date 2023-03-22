@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.navigation.Navigation
 
 class LanguagesettingFragment : Fragment() {
 
@@ -13,7 +15,27 @@ class LanguagesettingFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_languagesetting, container, false)
+        val view= inflater.inflate(R.layout.fragment_languagesetting, container, false)
+
+
+          val Applanguage=view.findViewById<ConstraintLayout>(R.id.constraintLayout_applanguage)
+          val Notificationlanguage=view.findViewById<ConstraintLayout>(R.id.constraintLayout_notificationlanuage)
+
+        Applanguage.setOnClickListener {
+
+            Navigation.findNavController(view).navigate(R.id.applanguageFragment)
+
+        }
+
+        Notificationlanguage.setOnClickListener {
+
+            Navigation.findNavController(view).navigate(R.id.notificationlanguageFragment)
+
+        }
+
+
+
+        return view
     }
 
 

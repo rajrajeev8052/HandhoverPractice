@@ -93,7 +93,7 @@
           android:id="@+id/img_scooter"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:src="@drawable/group_34058"
+          android:src="@drawable/scooter_delevry"
           android:padding="12dp"
           android:layout_marginStart="16dp"
           android:layout_marginTop="8dp"

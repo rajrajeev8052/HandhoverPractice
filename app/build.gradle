@@ -64,4 +64,8 @@ dependencies {
 
     //sdp
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    //otp dependency
+    implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }

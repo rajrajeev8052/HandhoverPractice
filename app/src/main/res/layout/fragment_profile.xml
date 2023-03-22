@@ -530,7 +530,7 @@
                     android:id="@+id/img_vehicle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/group_34058"
+                    android:src="@drawable/scooter_delevry"
                     android:padding="10dp"
                     app:layout_constraintTop_toTopOf="parent"
                     android:layout_marginTop="13dp"
