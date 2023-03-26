@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -15,8 +16,8 @@
 
            <ImageView
                android:id="@+id/img_scooter"
-               android:layout_width="74dp"
-               android:layout_height="74dp"
+               android:layout_width="@dimen/_55sdp"
+               android:layout_height="@dimen/_55sdp"
                android:src="@drawable/group_34058"
                app:layout_constraintStart_toStartOf="parent"
                app:layout_constraintEnd_toEndOf="parent"
@@ -50,62 +51,52 @@
                   app:layout_constraintStart_toStartOf="@id/txt_are_you_sure"
                   app:layout_constraintTop_toBottomOf="@id/txt_are_you_sure"/>
 
+
            <LinearLayout
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
-               android:orientation="horizontal"
-               android:layout_marginTop="@dimen/_28sdp"
                android:layout_marginHorizontal="@dimen/_15sdp"
-               app:layout_constraintTop_toBottomOf="@id/txt_holdon">
+               android:layout_marginTop="@dimen/_28sdp"
+               android:orientation="horizontal"
+               android:textAlignment="center"
+               app:layout_constraintTop_toBottomOf="@id/txt_holdon"
+              >
 
 
+               <androidx.appcompat.widget.AppCompatButton
+                   android:id="@+id/appbutton_no"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginEnd="@dimen/_7sdp"
+                   android:layout_weight="1"
+                   android:background="@drawable/no_yes_button"
+                   android:paddingVertical="5dp"
+                   android:text="No"
+                   android:textAlignment="center"
+                   android:textAllCaps="false"
+                   android:textColor="@color/white"
+                   android:textSize="14sp"
+                   android:textStyle="bold"
 
+                   />
 
-           <androidx.appcompat.widget.AppCompatButton
-               android:id="@+id/appbutton_no"
-               android:layout_width="0dp"
-               android:layout_height="wrap_content"
-               android:background="@drawable/no_yes_button"
-               android:text="No"
-               android:layout_marginEnd="@dimen/_7sdp"
-               android:layout_weight="1"
-               android:textAllCaps="false"
-               android:textColor="@color/white"
-               android:textSize="14sp"
-               android:textStyle="bold"
-
-               />
-
-           <androidx.appcompat.widget.AppCompatButton
-               android:id="@+id/appbutton_yes"
-               android:layout_width="0dp"
-               android:layout_height="wrap_content"
-                android:background="@drawable/yes_button"
-               android:textAllCaps="false"
-               android:textColor="#969696"
-               android:textSize="14sp"
-               android:layout_weight="1"
-               android:text="Yes"
-               android:textStyle="bold"
-               android:layout_marginStart="@dimen/_7sdp"
-               />
+               <androidx.appcompat.widget.AppCompatButton
+                   android:id="@+id/appbutton_yes"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/_7sdp"
+                   android:layout_weight="1"
+                   android:background="@drawable/yes_button"
+                   android:text="Yes"
+                   android:textAllCaps="false"
+                   android:textColor="#969696"
+                   android:textSize="14sp"
+                   android:textStyle="bold" />
 
            </LinearLayout>
-
-
-
-
-
-
-
-
 
 
        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+      </androidx.constraintlayout.widget.ConstraintLayout>

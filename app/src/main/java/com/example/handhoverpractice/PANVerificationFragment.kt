@@ -14,7 +14,11 @@ class PANVerificationFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_p_a_n_verification, container, false)
+        val view= inflater.inflate(R.layout.fragment_p_a_n_verification, container, false)
+
+
+
+        return view
     }
 
 

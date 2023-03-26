@@ -14,7 +14,11 @@ class SelectionOfStateFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_selection_of_state, container, false)
+        val view=inflater.inflate(R.layout.fragment_selection_of_state, container, false)
+
+
+
+        return view
     }
 
 }

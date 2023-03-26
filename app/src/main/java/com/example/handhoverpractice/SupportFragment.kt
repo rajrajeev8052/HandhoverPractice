@@ -14,6 +14,8 @@ class SupportFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_support, container, false)
+       val view= inflater.inflate(R.layout.fragment_support, container, false)
+
+        return view
     }
 }
